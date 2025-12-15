@@ -139,3 +139,4 @@
 /Users/omarosama/RiderProjects/SaraCafe/SaraCafe.API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
 /Users/omarosama/RiderProjects/SaraCafe/SaraCafe.API/obj/Debug/net9.0/SaraCafe.API.MvcApplicationPartsAssemblyInfo.cs
 /Users/omarosama/RiderProjects/SaraCafe/SaraCafe.API/bin/Debug/net9.0/SaraCafe.API.staticwebassets.runtime.json
+/Users/omarosama/RiderProjects/SaraCafe/SaraCafe.API/obj/Debug/net9.0/SaraCafe.API.sourcelink.json

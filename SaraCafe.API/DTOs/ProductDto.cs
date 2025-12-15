@@ -7,8 +7,11 @@ public class ProductDto
     public string NameEn { get; set; } = string.Empty;
     public string? DescriptionAr { get; set; }
     public string? DescriptionEn { get; set; }
+    
     public bool IsActive { get; set; }
     public string? ImageUrl { get; set; }
+    public decimal? Price { get; set; }
+    public string? Calories { get; set; }
     public int CategoryId { get; set; }
     public string? CategoryNameAr { get; set; }
     public string? CategoryNameEn { get; set; }
@@ -21,6 +24,8 @@ public class CreateProductDto
     public string? DescriptionAr { get; set; }
     public string? DescriptionEn { get; set; }
     public bool IsActive { get; set; } = true;
+    public decimal? Price { get; set; }
+    public string? Calories { get; set; }
     public int CategoryId { get; set; }
 }
 
@@ -31,6 +36,8 @@ public class UpdateProductDto
     public string? DescriptionAr { get; set; }
     public string? DescriptionEn { get; set; }
     public bool IsActive { get; set; }
+    public decimal? Price { get; set; }
+    public string? Calories { get; set; }
     public int CategoryId { get; set; }
 }
 

@@ -49,6 +49,8 @@ public class ProductsController : ControllerBase
             DescriptionEn = p.DescriptionEn,
             IsActive = p.IsActive,
             ImageUrl = p.ImageUrl,
+            Price = p.Price,
+            Calories = p.Calories,
             CategoryId = p.CategoryId,
             CategoryNameAr = p.Category?.NameAr,
             CategoryNameEn = p.Category?.NameEn
@@ -78,6 +80,8 @@ public class ProductsController : ControllerBase
             DescriptionEn = product.DescriptionEn,
             IsActive = product.IsActive,
             ImageUrl = product.ImageUrl,
+            Price = product.Price,
+            Calories = product.Calories,
             CategoryId = product.CategoryId,
             CategoryNameAr = product.Category?.NameAr,
             CategoryNameEn = product.Category?.NameEn
@@ -107,6 +111,8 @@ public class ProductsController : ControllerBase
             DescriptionEn = p.DescriptionEn,
             IsActive = p.IsActive,
             ImageUrl = p.ImageUrl,
+            Price = p.Price,
+            Calories = p.Calories,
             CategoryId = p.CategoryId,
             CategoryNameAr = p.Category?.NameAr,
             CategoryNameEn = p.Category?.NameEn
@@ -148,6 +154,8 @@ public class ProductsController : ControllerBase
             DescriptionEn = createProductDto.DescriptionEn,
             IsActive = createProductDto.IsActive,
             ImageUrl = imageUrl,
+            Price = createProductDto.Price,
+            Calories = createProductDto.Calories,
             CategoryId = createProductDto.CategoryId
         };
 
@@ -214,6 +222,8 @@ public class ProductsController : ControllerBase
         product.DescriptionEn = updateProductDto.DescriptionEn;
         product.IsActive = updateProductDto.IsActive;
         product.ImageUrl = imageUrl;
+        product.Price = updateProductDto.Price;
+        product.Calories = updateProductDto.Calories;
         product.CategoryId = updateProductDto.CategoryId;
 
         var updatedProduct = await _productRepository.UpdateProductAsync(product);

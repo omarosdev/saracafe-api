@@ -17,6 +17,7 @@ public class Product
     [MaxLength(200)]
     public string NameEn { get; set; } = string.Empty;
     
+   
     public string? DescriptionAr { get; set; }
     
     public string? DescriptionEn { get; set; }
@@ -24,6 +25,12 @@ public class Product
     public bool IsActive { get; set; } = true;
     
     public string? ImageUrl { get; set; }
+    
+    [Column(TypeName = "decimal(18,2)")]
+    public decimal? Price { get; set; }
+    
+    [MaxLength(100)]
+    public string? Calories { get; set; }
     
     [ForeignKey("CategoryId")]
     public Category? Category { get; set; }

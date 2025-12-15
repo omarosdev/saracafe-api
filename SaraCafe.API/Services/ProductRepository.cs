@@ -60,6 +60,8 @@ public class ProductRepository : IProductRepository
         existingProduct.DescriptionEn = product.DescriptionEn;
         existingProduct.IsActive = product.IsActive;
         existingProduct.ImageUrl = product.ImageUrl;
+        existingProduct.Price = product.Price;
+        existingProduct.Calories = product.Calories;
         existingProduct.CategoryId = product.CategoryId;
 
         await SaveChangesAsync();
