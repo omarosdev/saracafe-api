@@ -1,0 +1,6 @@
+@SaraCafe.API_HostAddress = http://localhost:5064
+
+GET {{SaraCafe.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
